@@ -21,4 +21,9 @@ public class FizzBuzzTest {
         Assert.assertEquals(new ArrayList<String>(Arrays.asList("1", "2")), unit.printList(new ArrayList<Integer>(Arrays.asList(1, 2))));
     }
 
+    @Test
+    public void methodIsCorrectNumberSubstituteToFizz() {
+        Assert.assertEquals(new ArrayList<String>(Arrays.asList("1", "2", "Fizz")), unit.printList(new ArrayList<Integer>(Arrays.asList(1, 2, 3))));
+    }
+
 }

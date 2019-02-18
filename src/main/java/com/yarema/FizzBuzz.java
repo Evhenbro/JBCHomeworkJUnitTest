@@ -7,7 +7,10 @@ public class FizzBuzz {
     public ArrayList<String> printList(ArrayList<Integer> lists) {
         ArrayList<String> arrayList = new ArrayList<String>();
         for (Integer list: lists) {
-            arrayList.add("" + list);
+            if ((list % 3) == 0.0) {
+                arrayList.add("Fizz");
+            } else
+                arrayList.add("" + list);
         }
         return arrayList;
     }
