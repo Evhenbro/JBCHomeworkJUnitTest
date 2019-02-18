@@ -1,6 +1,7 @@
 package com.yarema;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -8,7 +9,12 @@ import java.util.Arrays;
 
 public class FizzBuzzTest {
 
-    private static FizzBuzz unit;
+    private FizzBuzz unit;
+
+    @Before
+    public void createInstance() {
+         unit = new FizzBuzz();
+    }
 
     @Test
     public void methodPrintListIsCorrectListReturn() {

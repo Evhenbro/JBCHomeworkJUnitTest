@@ -7,7 +7,7 @@ public class FizzBuzz {
     public ArrayList<String> printList(ArrayList<Integer> lists) {
         ArrayList<String> arrayList = new ArrayList<String>();
         for (Integer list: lists) {
-
+            arrayList.add("" + list);
         }
         return arrayList;
     }
